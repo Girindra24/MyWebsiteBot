@@ -241,8 +241,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
-  margin-right: 250px;
-  margin-bottom: 150px;
+  margin-right: 20%;
+  margin-bottom: 20%;
 }
 
 #hero h1 {
@@ -250,18 +250,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #f6f5f1;
 }
 
 #hero p {
-  color: #fff;
+  color: #000000;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #fff;
+  color: #000000;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -474,6 +474,7 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
   margin-left: auto;
+  text-align: center;
 }
 
 
@@ -534,109 +535,46 @@ section {
 /*--------------------------------------------------------------
 # Languages
 --------------------------------------------------------------*/
-.languages .languages-item {
-  box-sizing: content-box;
-  text-align: center;
-  min-height: 320px;
+.languages .progress {
+  height: 50px;
+  display: block;
+  background: none;
 }
 
-.languages .languages-item .languages-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
+.languages .progress .languages {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
 }
 
-.languages .languages-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
+.languages .progress .language .val {
+  float: right;
+  font-style: normal;
 }
 
-.languages .languages-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
+.languages .progress-bar-wrap {
+  background: #dce8f8;
 }
 
-.languages .languages-item .quote-icon-left, .languages .languages .quote-icon-right {
-  color: #c3e8fa;
-  font-size: 26px;
+.languages .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: #149ddd;
 }
 
-.languages .languages-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
+#language-type {
+  font-size: 25px;
+  font-weight: 700px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #173b6c;
 }
 
-.languages .languages-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.languages .languages-item p {
-  font-style: italic;
-  margin: 0 15px 15px 15px;
-  padding: 20px;
-  background: #fff;
-  position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.languages .languages-item p::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid #fff;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
-}
-
-.languages .owl-nav, .languages .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.languages .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.languages .owl-dot.active {
-  background-color: #149ddd !important;
-}
-
-.carousel-item h5{
-  font-size: 100px;
-  margin-bottom: 60px;
-}
-
-.carousel-item{
-    height: 300px;
-    width: 100%;
-}
-.carousel-item img{
-    height: 300px;
-    width: 100%;
-}
-
-@media (max-width: 767px) {
-  .testimonials {
-    margin: 30px 10px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Contact
